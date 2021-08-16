@@ -1,15 +1,52 @@
 <div id="app">
+  <div id="players">
+    <div id="p1">Player 1: <input id="p1name" value="Player 1"></div>
+    <div id="p2">Player 2: <input id="p2name" value="Player 2"></div>
+    <div id="p3">Player 3: <input id="p3name" value="Player 3"></div>
+    <div id="p4">Player 4: <input id="p4name" value="Player 4"></div>
+    <div id="playerbutton">
+      <button id="player-upd-btn">Start New Game</button>
+    </div>
+  </div>
+  <div id="lastplayer">
+    <h3>Last Spin:</h3>
+    <p id="lastplayername"></p>
+  </div>
   <div id="results">
     <div class="result" id="colourResult"></div>
     <div class="result" id="bodyPartResult">
       <p id="bodyPartText"></p>
     </div>
   </div>
+  <div id="currentplayer">
+    <h3>Next Spin:</h3>
+    <p id="currentplayername"></p>
+  </div>
   <div id="buttons">
     <button id="spin-btn">Spin!</button>
   </div>
+  <!-- <div id="playerstatediv">
+    <h2>Player Positions</h2>
+    <div id="playerstate">
+      <div id="player1state" class="individualplayerstate">
+        <div id="player1statename"></div>
+        <div id="player1LeftHand"></div>
+        <div id="player1RightHand"></div>
+        <div id="player1LeftFoot"></div>
+        <div id="player1RightFoot"></div>
+      </div>
+      <div id="player2state" class="individualplayerstate"></div>
+      <div id="player3state" class="individualplayerstate"></div>
+      <div id="player4state" class="individualplayerstate"></div>
+    </div>
+  </div>   -->
+  <hr/>
   <div id="statsDiv">
     <h2> Stats </h2>
+    <label for="playerSelect">Player</label>
+    <select id="playerSelect">
+    </select>
+    
     <label for="colourSelect">Colour</label>
     <select id="colourSelect">
     </select>
@@ -19,18 +56,20 @@
     </select>
     
     <button id="statsBtn">Update Stats</button>
-
-    <div id="statsResults">
-      No spins recorded
-    </div>
-
-  <hr>
+  </div>
+  <div id="statsResults">
+    No spins recorded
+  </div>
+  
+  <hr/>
+  
   <div id="historyDiv">
     <h2>History</h2>
     <table id="historyTable">
       <thead>
         <tr>
           <th class="num">Num</th>
+          <th>Player</th>
           <th>Colour</th>
           <th>Body Part</th>
         </tr>
@@ -38,5 +77,5 @@
       <tbody id="historyTableBody">
       </tbody>
     </table>
-
+  </div>
 </div>

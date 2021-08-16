@@ -4,6 +4,17 @@ div {
 
 h1, h2 {
   font-family: Lato;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+h3 {
+  margin-bottom: 0px;
+}
+p{
+  margin: 4px;
+}
+hr{
+  width: 100%;
 }
 
 .header {
@@ -18,6 +29,12 @@ h1, h2 {
   flex-direction: column;
 }
 
+#statsDiv {
+  /* display: flex;
+  flex-direction: column; */
+  width: 90%;
+}
+
 #historyDiv {
   width: 90%;
 }
@@ -30,15 +47,28 @@ h1, h2 {
 th {
   background-color: lightgray;
   border: 1px solid;
-  width: 40%;
+  width: 27%;
 }
 
 th.num {
-  width: 20%;
+  width: 19%;
 }
 
 td {
    border: 1px solid;
+}
+
+#players {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#currentplayer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #results {
